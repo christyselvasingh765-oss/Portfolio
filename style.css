@@ -1,0 +1,363 @@
+```css
+/* ================================
+   CHRISTY.S - PORTFOLIO STYLE
+   ================================ */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    background: #f4f7fb;
+    color: #222;
+}
+
+
+/* ================================
+   NAVIGATION BAR
+   ================================ */
+
+header {
+    background: #111827;
+    color: white;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h2 {
+    color: #60a5fa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* ================================
+   COMMON SECTION
+   ================================ */
+
+section {
+    padding: 70px 10%;
+    min-height: 70vh;
+}
+
+
+/* ================================
+   HERO SECTION
+   ================================ */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: #eaf2ff;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.hero h3 {
+    font-size: 25px;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 750px;
+    font-size: 18px;
+}
+
+
+/* ================================
+   BUTTON
+   ================================ */
+
+.btn {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    background: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   SECTION TITLE
+   ================================ */
+
+.title {
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 35px;
+
+    color: #111827;
+}
+
+
+/* ================================
+   ABOUT SECTION
+   ================================ */
+
+.about {
+    max-width: 900px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    text-align: center;
+}
+
+
+/* ================================
+   INFORMATION CARDS
+   ================================ */
+
+.info-box {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    max-width: 900px;
+
+    margin: 35px auto;
+}
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   SKILLS
+   ================================ */
+
+.skills {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.skill {
+    background: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill h3 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   PROJECTS
+   ================================ */
+
+.project {
+    background: white;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+.project ul {
+    margin-left: 25px;
+}
+
+
+/* ================================
+   ACHIEVEMENTS
+   ================================ */
+
+.achievement {
+    text-align: center;
+
+    background: #eef6ff;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+    transition: 0.3s;
+}
+
+.achievement:hover {
+    transform: translateY(-5px);
+}
+
+.achievement h3 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   CONTACT
+   ================================ */
+
+#contact {
+    background: #eaf2ff;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 8px;
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h3 {
+        font-size: 20px;
+    }
+
+    .info-box {
+        grid-template-columns: 1fr;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+}
+```

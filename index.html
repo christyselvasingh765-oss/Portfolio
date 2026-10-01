@@ -1,0 +1,564 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Christy.S | Cloud Computing Programmer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h2 {
+            color: #60a5fa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        section {
+            padding: 70px 10%;
+            min-height: 70vh;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #eaf2ff;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .hero h3 {
+            font-size: 25px;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 35px;
+            color: #111827;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .info-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 35px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .skill {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .skill h3 {
+            color: #2563eb;
+        }
+
+        .project {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .project h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 25px;
+        }
+
+        .achievement {
+            text-align: center;
+            background: #eef6ff;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .achievement h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .info-box,
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+    <h2>Christy.S</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<!-- Home -->
+<section class="hero" id="home">
+
+    <h1>Hi, I'm Christy.S 👋</h1>
+
+    <h3>B.Tech IT Student | Cloud Computing Programmer | Python Programmer</h3>
+
+    <p>
+        I am a 2nd-year B.Tech Information Technology student
+        passionate about Cloud Computing, Python Programming,
+        Software Development, Artificial Intelligence and
+        emerging technologies.
+    </p>
+
+    <a href="#about" class="btn">Explore My Profile</a>
+
+</section>
+
+
+<!-- About -->
+<section id="about">
+
+    <h2 class="title">About Me</h2>
+
+    <div class="about">
+
+        <p>
+            I am Christy.S, a 2nd-year B.Tech Information Technology
+            student with a strong interest in Cloud Computing and
+            Python Programming.
+        </p>
+
+        <br>
+
+        <p>
+            I enjoy learning new technologies, developing practical
+            projects, participating in hackathons and technical events,
+            and solving real-world problems using technology.
+        </p>
+
+        <br>
+
+        <p>
+            I continuously work on improving my programming,
+            problem-solving, teamwork, communication and technical skills.
+        </p>
+
+    </div>
+
+    <div class="info-box">
+
+        <div class="card">
+            <h3>🎓 Education</h3>
+            <p>B.Tech Information Technology</p>
+            <p>Currently pursuing 2nd Year</p>
+        </div>
+
+        <div class="card">
+            <h3>☁️ Domain</h3>
+            <p>Cloud Computing</p>
+        </div>
+
+        <div class="card">
+            <h3>🐍 Programming</h3>
+            <p>Python Programming</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Interests</h3>
+            <p>AI, Software Development & Emerging Technologies</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Skills -->
+<section id="skills">
+
+    <h2 class="title">My Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">
+            <h3>🐍 Python</h3>
+            <p>
+                Python programming, data handling,
+                basic applications and problem solving.
+            </p>
+        </div>
+
+        <div class="skill">
+            <h3>☕ Java</h3>
+            <p>
+                Java fundamentals, OOP concepts
+                and programming practice.
+            </p>
+        </div>
+
+        <div class="skill">
+            <h3>☁️ Cloud Computing</h3>
+            <p>
+                Cloud fundamentals, services,
+                infrastructure and deployment concepts.
+            </p>
+        </div>
+
+        <div class="skill">
+            <h3>🌐 Web Development</h3>
+            <p>
+                HTML, CSS and JavaScript
+                for developing web applications.
+            </p>
+        </div>
+
+        <div class="skill">
+            <h3>🤖 Artificial Intelligence</h3>
+            <p>
+                Exploring AI fundamentals
+                and intelligent applications.
+            </p>
+        </div>
+
+        <div class="skill">
+            <h3>🔧 DevOps</h3>
+            <p>
+                Learning DevOps fundamentals,
+                tools and development practices.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Projects -->
+<section id="projects">
+
+    <h2 class="title">My Projects</h2>
+
+    <div class="project">
+
+        <h3>🚍 Smart Public Transport Pass Management System</h3>
+
+        <p>
+            A Java-based system designed to manage public
+            transport passes digitally.
+        </p>
+
+        <br>
+
+        <strong>Features:</strong>
+
+        <ul>
+            <li>User Registration and Login</li>
+            <li>Route Selection</li>
+            <li>Pass Generation</li>
+            <li>Pass Validity Checking</li>
+            <li>Pass Renewal</li>
+            <li>Pass History</li>
+            <li>Digital Pass Details</li>
+        </ul>
+
+        <br>
+
+        <p>
+            <strong>Technologies:</strong>
+            Java, HTML, CSS, JavaScript
+        </p>
+
+    </div>
+
+
+    <div class="project">
+
+        <h3>🚗 EV Incident Reconstruction / Digital Black Box</h3>
+
+        <p>
+            A software-based concept focused on reconstructing
+            and analysing electric vehicle incidents using
+            vehicle-related data.
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Area:</strong>
+            EV Technology, Software and AI
+        </p>
+
+    </div>
+
+
+    <div class="project">
+
+        <h3>🐍 Python Projects</h3>
+
+        <p>
+            I am developing Python-based applications and
+            programming projects to strengthen my technical
+            knowledge and problem-solving skills.
+        </p>
+
+        <br>
+
+        <ul>
+            <li>Calculator Applications</li>
+            <li>Data Processing Programs</li>
+            <li>Basic Chatbots</li>
+            <li>Data Analysis Programs</li>
+            <li>Data Visualization</li>
+            <li>Programming Practice Projects</li>
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- Achievements -->
+<section id="achievements">
+
+    <h2 class="title">Hackathons & Achievements</h2>
+
+    <div class="achievement">
+
+        <h3>🏆 Hackathons</h3>
+
+        <p>
+            I actively participate in hackathons and technical
+            events to improve my problem-solving, teamwork,
+            innovation and project development skills.
+        </p>
+
+    </div>
+
+
+    <div class="achievement">
+
+        <h3>📜 Certifications</h3>
+
+        <p>
+            I have earned multiple certificates through
+            hackathons, technical events, learning programs
+            and skill-development activities.
+        </p>
+
+    </div>
+
+
+    <div class="achievement">
+
+        <h3>💡 Learning & Innovation</h3>
+
+        <p>
+            I continuously explore new technologies and
+            participate in activities that help me improve
+            my technical and professional skills.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Career Goal -->
+<section>
+
+    <h2 class="title">My Career Goal</h2>
+
+    <div class="about">
+
+        <p>
+            My goal is to become a skilled technology professional
+            with strong knowledge in Cloud Computing, Python,
+            Artificial Intelligence and Software Development.
+        </p>
+
+        <br>
+
+        <p>
+            I want to build practical, innovative and scalable
+            solutions that can solve real-world problems.
+        </p>
+
+        <br>
+
+        <h3>Learn → Build → Practice → Participate → Improve 🚀</h3>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+<section id="contact">
+
+    <h2 class="title">Let's Connect</h2>
+
+    <div class="about">
+
+        <p>
+            I am interested in learning, collaborating,
+            participating in technical events and working
+            on innovative projects.
+        </p>
+
+        <br>
+
+        <p>
+            <strong>GitHub:</strong>
+            christyselvasingh765-oss
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Interests:</strong>
+            Cloud Computing | Python | AI |
+            Software Development | Hackathons
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+    <p>Made with ❤️ by Christy.S</p>
+
+    <p>© 2026 Christy.S | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
+```
